@@ -157,7 +157,6 @@ header .logo {
   flex-wrap: nowrap;  
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
 .main-content .top-content .text-content {
@@ -178,7 +177,7 @@ header .logo {
   padding: 0 10px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-evenly; 
 }
 
 .main-content .bottom-content .text-content {
@@ -260,18 +259,22 @@ footer {
         width: 100%;
         height: auto;
     }
+    .logo {
+        margin-bottom: 20px;
+    }
     
     header {
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
     }
     
     header nav {
         display: block;
         flex-direction: column;
-        max-width: 100%;
+        width: 100%;
         margin: 0 auto;
     }
     
@@ -281,8 +284,34 @@ footer {
         text-align: center;
         border: 1px solid grey;
         margin: 0 0 0 0;
-        padding: 20px;
+        padding: 20px 20px 20px 20px;
     }
+    
+    .main-content .top-content {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10px;
+        
+    }
+    
+    .main-content .bottom-content {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10px;
+        
+    }
+    
+    .main-content .top-content .text-content {
+        margin: 20px 0;
+        width: 100%;
+
+    }
+    
+    .main-content .bottom-content .text-content {
+        margin: 20px 0;
+        width: 100%;
+    }
+    
     
 }
 
