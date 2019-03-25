@@ -75,10 +75,10 @@ h1, h2, h3, h4, h5 {
     width: 880px;
     margin: 0 auto;
 }
+
+
+
 /* header */
-
-
-
 
 header {
     display: flex;
@@ -142,23 +142,6 @@ header .logo {
   text-align: center;
   padding: 0px 75px;
 }
-
-/*
-
-}
-
-
-
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
-}
-
-.cta img {
-  display: inline-block;
-  margin-top: 69px;
-}
-*/
 
 /*Main content*/
 
@@ -224,95 +207,56 @@ footer {
   font-size: 14px;
 }
 
-/*Services.html CSS*/
-
-
-.headerS {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.navS {
-    margin-bottom: 10px;
-}
-
-.services-header-img {
-    margin-bottom: 25px;
-    margin-top: 25px;
-    border
-}
 
 
 
-.top-text {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-bottom: 1px solid black;
-   
-}
-
-.top-text h2 {
-    font-size: 25px;
-}
-
-.main-text {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid black;
-    background: lightgrey;
-    height: 250px;
-    width: 400px;
-}
-
-.services-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.services-main h2 {
-    font-size: 20px;
-}
-
-.services-main button {
-    margin-top: 30px;
-    width: 80px;
-    height: 36px;
-    border: .5px solid black;
-}
 
 
 
-.services-bottom {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    margin: 10px;
-    border-top: 1px solid black;
-    padding: 20px;
-}
 
 
 /*TABLET VIEW QUERY*/
-
 @media(max-width: 800px) {
+    .container {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    }
+    header nav {
+        display: flex;
+        justify-content: center;
+    }
     
+    .logo {
+        width: 200px;
+        height: auto;
+        margin: 0px 250px;
+    }
+    .middle-img {
+        width: 600px;
+        height: auto;
+    }
+    .pic {
+        display: none;
+    }
 }
-
-
 
 
 /*MOBILE VIEW QUERY*/
 
 @media(max-width: 500px) {
-   
+    .container {
+        background: lightgreen;
+    }
 }
+
+
 
 
 
