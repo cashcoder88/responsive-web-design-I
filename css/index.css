@@ -1,5 +1,4 @@
-
-
+/*GIT FINAL CHECK*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -72,21 +71,34 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+.containerS {
+    width: 880px;
+    margin: 0 auto;
+}
 /* header */
 
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center; 
+}
+
 header nav {
-  display: inline-block;
+  
   width: 691px;
-  vertical-align: top;
   margin-top: 35px;
 }
 
 header nav a {
   margin-right: 65px;
-  font-size: 14px;
+  font-size: 15px;
   color: gray;
   text-decoration: none;
 }
+
 
 header nav a:hover {
   text-decoration: underline;
@@ -106,13 +118,11 @@ header .logo {
 
 /* cta */
 
-.cta .cta-text {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
-  text-align: center;
-  padding: 0px 75px;
+.cta {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .cta .cta-text button {
@@ -125,6 +135,20 @@ header .logo {
   cursor: pointer;
 }
 
+.cta .cta-text {
+  vertical-align: top;
+  font-size: 77px;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+/*
+
+}
+
+
+
 .cta .cta-text button:hover {
   background: black;
   color: white;
@@ -134,6 +158,9 @@ header .logo {
   display: inline-block;
   margin-top: 69px;
 }
+*/
+
+/*Main content*/
 
 .main-content {
   border-top: 1px solid black;
@@ -143,12 +170,16 @@ header .logo {
 
 .main-content .top-content {
   padding: 0 10px;
+  display: flex;
+  flex-wrap: nowrap;  
+  justify-content: space-evenly;
+  align-items: center;
+  
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
-  display: inline-block;
-  margin-right: 34px;
+  width: 440px;
+  
 }
 
 .main-content .top-content .text-content:last-child {
@@ -162,11 +193,13 @@ header .logo {
 .main-content .bottom-content {
   margin-top: 37px;
   padding: 0 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 
 .main-content .bottom-content .text-content {
   width: 275px;
-  display: inline-block;
   margin-right: 12px;
 }
 
@@ -174,6 +207,7 @@ header .logo {
   margin-right: 0;
 }
 
+/* Bottom Content */
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
@@ -188,6 +222,97 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
-}/* Use your own code or past solution for Great Idea Web Page CSS here! */
+}
+
+/*Services.html CSS*/
+
+
+.headerS {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navS {
+    margin-bottom: 10px;
+}
+
+.services-header-img {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border
+}
+
+
+
+.top-text {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+   
+}
+
+.top-text h2 {
+    font-size: 25px;
+}
+
+.main-text {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    background: lightgrey;
+    height: 250px;
+    width: 400px;
+}
+
+.services-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.services-main h2 {
+    font-size: 20px;
+}
+
+.services-main button {
+    margin-top: 30px;
+    width: 80px;
+    height: 36px;
+    border: .5px solid black;
+}
+
+
+
+.services-bottom {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 10px;
+    border-top: 1px solid black;
+    padding: 20px;
+}
+
+
+/*TABLET VIEW QUERY*/
+
+@media(max-width: 800px) {
+    
+}
+
+
+
+
+/*MOBILE VIEW QUERY*/
+
+@media(max-width: 500px) {
+   
+}
+
 
 
